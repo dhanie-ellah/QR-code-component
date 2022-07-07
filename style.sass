@@ -1,0 +1,52 @@
+$White: hsl(0, 0%, 100%)
+$Light-gray: hsl(212, 45%, 89%)
+$Grayish-blue: hsl(220, 15%, 55%)
+$Dark-blue: hsl(218, 44%, 22%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "outfit"
+
+body
+    width: 100%
+    height: 100vh
+    background-color: $Light-gray
+
+.body-content
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .qr-code
+        width: 100%
+        .qr-code-content
+            width: 20%
+            margin: auto
+            background-color: $White
+            border-radius: 15px
+            padding: 15px
+            text-align: center
+            .image-container
+                width: 100%
+                margin-bottom: 25px
+                img
+                    width: 100%
+                    border-radius: 10px
+            h3
+                color: $Dark-blue
+                margin-bottom: 10px
+                font-weight: 700px
+            p
+                color: $Grayish-blue
+                font-size: 14px
+                margin-bottom: 20px
+                font-weight: 500
+
+@media ( max-width: 1044px )
+        .qr-code
+            .qr-code-content
+                width: 100%
+
+    
