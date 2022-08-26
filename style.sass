@@ -10,7 +10,6 @@ $Dark-blue: hsl(218, 44%, 22%)
     font-family: "outfit"
 
 body
-    width: 100%
     height: 100vh
     background-color: $Light-gray
 
@@ -22,7 +21,7 @@ body
     .qr-code
         width: 100%
         .qr-code-content
-            width: 20%
+            width: 30%
             margin: auto
             background-color: $White
             border-radius: 15px
@@ -44,8 +43,10 @@ body
                 margin-bottom: 20px
                 font-weight: 500
 
-@media ( max-width: 1044px )
+@media ( max-width: 690px )
+    .body-content
         .qr-code
+            padding: 25px
             .qr-code-content
                 width: 100%
 
